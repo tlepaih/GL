@@ -15,4 +15,4 @@ short resultat, i = 0;
     }
      return 0;
 }
-// Ce programme réalise 10 lancers de dé consécutifs.
+// Ce programme réalise 10 lancers de dé consécutifs
