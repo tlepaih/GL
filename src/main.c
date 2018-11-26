@@ -1,9 +1,10 @@
+#include <stdlib.h>
+
 #define SEUIL 50
 #define SEUILH 500
 #define SEUILB -500
 #define N 6
 
-#include <stdlib.h>
 
 int main(void)
 {
