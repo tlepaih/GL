@@ -2,25 +2,22 @@
 //
 
 #include <stdlib.h>
-#include "my_header.h"
-
+#include "TP_lib_suite.h"
 #define N 6
 
 int main(void)
 {
 	unsigned char joueur[N] = {12,3,6,24,42,33}, gagnante[N] = {7,22,41,3,12,37};
-	unsigned char a=0,i, score=0;
+	unsigned char i,j, score=0;
 	
 	
-	while (a!=6)
+	for (j=0; j<N; j++)
 	{
-		for (i=0, i<N, i++)
+		for (i=0; i<N; i++)
 		{
-			if (gagnante[a] == joueur[i])
+			if (gagnante[j] == joueur[i])
 				score++;
 	
-			else
-				a++;
 		}					  
 	}
 	
