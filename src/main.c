@@ -1,25 +1,26 @@
 //  Copyright (c) 2018 Antoine Tran Tan
 //
 
-#include <stdlib.h>
 #include "TP_lib_suite.h"
-#define N 6
+#include "biblio58.h"
+
 
 int main(void)
 {
-	unsigned char joueur[N] = {12,3,6,24,42,33}, gagnante[N] = {7,22,41,3,12,37};
-	unsigned char i,j, score=0;
+	unsigned char k, meilleur_score = 0,a;
 	
 	
-	for (j=0; j<N; j++)
+	for (k=0; k<100; k++)
 	{
-		for (i=0; i<N; i++)
-		{
-			if (gagnante[j] == joueur[i])
-				score++;
+		a = test_score();
+		
+		if (a>meilleur_score)
+			meilleur_score = a;
+		
+		if (meilleur_score == 6)
+			k=100;
+	}	
 	
-		}					  
-	}
 	
 	
 	
